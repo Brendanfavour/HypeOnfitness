@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HypeOn Fitness</title>
+    <link rel="icon" href="./assets/Hype on Logo.jpg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 0;
+            color: white;
+            background: url('./assets/pexels-rui-dias-469842-1472887.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        header p {
+            font-size: 1.2em;
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about, .feature, .welcome, .booking {
+            background-color: #fff;
+            padding: 50px 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about img, .feature img, .welcome img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .booking form input, .booking form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .booking form button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .booking form button:hover {
+            background-color: #ff6f61;
+        }
+
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+
+        .video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.fullscreen-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    transform: translate(-50%, -50%);
+}
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#feature">Feature</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="welcome">
+        <h1>HypeOn Fitness</h1>
+        <p>Unleash your potential with us</p>
+    </header>
+
+    <section class="welcome">
+        <h2>Welcome to HypeOn Fitness</h2>
+        <img src="./assets/pexels-martine-savard-158139-34669.jpg" alt="Welcome Background Image">
+        <p>Welcome to Hype on Fitness, where your journey to a healthier, fitter you begins. Our state-of-the-art facilities and experienced trainers are here to guide and motivate you every step of the way. Join us and be part of a community that values health, fitness, and well-being.</p>
+        <h2>VISION</h2>
+        <h1>FITNESS INSPIRED</h1>
+        <h3>Our Philosophy</h3>
+        <p>Build the narrative of a positive outlook on life through fitness: amplify self awareness + encourage our community to strive on reaching a well-balanced wholesome life filled with good nutrition choices!</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About HypeOn Fitness</h2>
+        <img src="./assets/pexels-823sl-2294361.jpg" alt="About Us Image">
+        <h2>A place of INSPIRED FITNESS</h2>
+        <P>HypeOn fitness is founded on the principles of descipline + sheer hard work to achieve full finess potential. Hard work is futile if not anchored by our faith in God. we believe Jesus is the cornerstone of our faith and all things are possible to those who believe.</P>
+    </section>
+
+    <section id="HypeOn Fitness" class="HypeOn Fitness">
+        <H1>HypeOn Fitness</H1>
+        <p><H3>HYPEON AIMS TO SHAPE + INFLUENCE PARTICIPANTS THROUGH A HOLISTIC THREE-PRONGED APPROACH:</H3></p>
+        <h2>PHYSICALLY</h2>
+        <P>ASSESSING PARTICIPANTS' FITNESS LEVEL. THEN WORKING OUT A FITNESS PLAN TOGATHER WITH THE PARTICIPANTS + THEN OULTIMATELY ACHIEVING THE SET GOALS.</P>
+        <H2>NUTRITION</H2>
+        <p><h3>WHILST THE PARTICIPANT IS WORKING OM THEIR FITNESS PLAN IT IS UTMOST IMPORTANCE THAT THE PARTICIPANS' DIET IS ASSESSED AS WELL. TO WORK SIMULTANEOUSLY WITH FITNESS PLAN 80% NUTRITION + FITNESS</h3></p>
+        <H2>SPIRITUALLY</H2>
+        <P><H3>HYPEON FITNESS DRAWS IT'S STREANTH FROM THE LORD. NOW TO ACHIEVE THE SET GOALS PARTICIPANS SHOULD ALSO FEED THE SPIRIT AS WE ARE SPIRIT BEINGS. IT IS A STANDARD PROCEDURE THAT AFTER EVERY WORKOUT SESSION WE ALL SAY A PRAYER TOGETHER.</H3></P>
+
+    </section>
+
+    <section id="feature" class="feature">
+        <h2>Our Services</h2>
+        <img src="./assets/pexels-thelazyartist-2247179.jpg" alt="Feature Image">
+        <h2>ONLY THE FINEST OFFERED</h2>
+        <p>Our services are executed with EXCELLENCE</p>
+        
+    
+    <section id="video" class="video-section">
+        <video autoplay muted loop class="fullscreen-video">
+            <source src="./Weekly Workout Sessions_20240520_160948_0001.mp4" type="video/mp4">
+             My browser does not support the video tag. 
+            </video>
+    </section>  
+    
+<div><h1>5 HOURS</h1>
+    <P>SPENT AT THE NIKE CENTRE IN A WEEK: AN HOUR DAILY TO HOST WORKOUTS ON SITE</P>
+    <P>WORKOUTS ALLOW US TO CONNECT WITH OUR COMMUNITY AND INTRODUCE PROSPECTIVE PARTICIPANS TO THE WORKINGS OF FITNESS IN A WELCOMING SPACE LIKE THE NIKE CENTRE WITHOUT THEM FEELING INTIMIDATED</P>
+</div>
+    
+<div><h1>2 HOURS</h1>
+    <p>SPENT AT THE NIKE CENTRE IN COLLABORATION WITH THE BOXSHOP LIFESTYLE TWICE A WEEK TO HOST FITNESS LIVE STREAMING PODCAST WITH THE @BOXSHOPONLINERADIO. A GREAT CURATION PLATFORM TO REACH OUR AUDIENCE ON THE GO</p>
+    <P>Fitcamps are fitness sessions which helps us to also foster new relationships with other fitness clubs (nationally + God willingly globally soon) and facilitates personal growth through the interaction with other like-minded individuals.</P>
+</div>
+
+<div><h2>Quartely</h2>
+<p>SPENT AT VARIOUS PICTURESQUE OUTDOOR LOCATIONS WHICH SCRATCHES OUR #ADVENTUREBUNNY ITCH!</p></div>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <img src="./assets/pexels-victorfreitas-841130.jpg" alt="Gallery Image 1">
+        <img src="./assets/pexels-martine-savard-158139-34669.jpg" alt="Gallery Image 2">
+        <img src="./assets/pexels-conojeghuo-175708.jpg" alt="Gallery Image 3"> 
+        <img src="./assets/pexels-leonardho-1552248.jpg" alt="Gallery Image 4">
+        <img src="./assets/pexels-rui-dias-469842-1472887.jpg" alt="Gallery Image 5">
+    </section>
+
+    <section id="shop" class="shop">
+        <h2>Shop</h2>
+        <p>Explore Our Collection</p>
+        <img src="./assets/Merch 1.jpg" alt="Gallery Image 1">
+        <img src="./assets/Merch 2.jpg" alt="Gallery Image 2">
+        <img src="./assets/Merch 3.jpg" alt="Gallery Image 3">
+    </section>
+
+    <section id="booking" class="booking">
+        <h2>Book a Session</h2>  
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for inquiries or to discuss how we can help with your fitness and wellness goals. </p>
+        <p>Call +27 65 121 2068</p>
+        <p>Email: Hypeonfitness@gmail.com</p>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 Hype on Fitness. All rights reserved.</p>
+        <p>Powered by Morell & Brendan Graphic Studio</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
